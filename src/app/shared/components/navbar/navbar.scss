@@ -1,0 +1,46 @@
+.notion-sidebar {
+  position: fixed;
+  z-index: 1000;
+  margin-top: 10rem;
+  width: auto;
+  background-color: #f3f2f2;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 0.5rem;
+  color: rgb(87, 87, 87);
+  transition: width 0.3s ease-in-out;
+  overflow-x: hidden;
+
+  &:hover {
+    width: 220px; // opcional: sidebar más ancho
+  }
+
+  .nav-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .sidebar-line {
+      width: 4px;
+      height: 24px;
+      background-color: #888;
+      margin: 0 12px;
+      border-radius: 2px;
+      transition: all 0.2s ease-in-out;
+
+      &.expanded {
+        background-color: #00aaff;
+        width: 8px;
+      }
+    }
+
+    .sidebar-text {
+      white-space: nowrap;
+      margin-left: 4px;
+      transition: opacity 0.2s;
+    }
+  }
+}

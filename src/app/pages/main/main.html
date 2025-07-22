@@ -1,0 +1,144 @@
+<!-- Inicio -->
+<section class="container pt-5 text-center">
+  <div class="title">
+    <h2>Desarrollador</h2>
+  </div>
+  <div class="subtitle">
+    <h3>Backend & Analista de Sistemas</h3>
+  </div>
+  <hr class="divider w-50 mx-auto my-4" />
+  <div class="description">
+    <p>Creando arquitecturas robustas y analizando sistemas complejos.</p>
+    <p>Enfocado en soluciones elegantes y escalables.</p>
+  </div>
+  <div class="contact d-flex flex-row justify-content-center gap-3">
+    @for (contact of contacts; track $index) {
+    <div class="contact-item">
+      <a [href]="contact.url" target="_blank" rel="noopener noreferrer">
+        <i class="{{ contact.icon }}"></i>
+        <span>{{ contact.name }}</span>
+      </a>
+    </div>
+    }
+  </div>
+</section>
+
+<!-- Sobre mi -->
+<section class="container text-center pt-5">
+  <div class="title">
+    <h2>Sobre Mí</h2>
+  </div>
+  <hr class="divider w-25 mx-auto my-4" />
+  <div class="description">
+    <p>
+      Estudiante de Análisis de Sistemas con experiencia en desarrollo de
+      software. Me especializo en arquitecturas backend robustas usando
+      <strong>C#</strong>, <strong>ASP.NET Core</strong>,
+      <strong>Entity Framework Core</strong> como ORM,
+      <strong>SQL Server</strong> como motor de base de datos y
+      <strong>Azure</strong> para su despliegue. Trabajo de manera eficiente y
+      ágil, siguiendo metodologías ágiles como <strong>Scrum</strong>,
+      principalmente bajo el paradigma de <strong>POO</strong>, respetando los
+      principios <strong>SOLID</strong> y buenas prácticas de
+      <strong>seguridad</strong>, con el objetivo de brindar sistemas
+      <span class="bg-warning ps-1 pe-1">escalables</span> y
+      <span class="bg-warning ps-1 pe-1">mantenibles</span>.
+    </p>
+    <p>
+      También tengo conocimientos en <strong>Angular</strong>, aprovechando su
+      arquitectura modular, <strong>formularios reactivos</strong>, uso de
+      <strong>pipes</strong> y componentes reutilizables, integrando interfaces
+      limpias con <strong>Bootstrap</strong>.
+    </p>
+    <p>
+      Participo activamente en el relevamiento y documentación de sistemas,
+      aplicando análisis funcional y diagramas UML.
+    </p>
+    <p>
+      Podés ver más sobre mi formación y experiencia en mi
+      <a href="URL_DE_TU_CV" target="_blank">CV</a>.
+    </p>
+    <a href="#"><strong>#Drinkingmate24/7</strong></a>
+  </div>
+
+  <div
+    class="card-container pt-5 pb-5 row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"
+  >
+    @for (info of infos; track $index) {
+    <div class="col">
+      <div class="card h-100 pt-2">
+        <div class="card-title">{{info.title}}</div>
+        <div
+          class="card-subtitle text-secondary"
+          [innerHTML]="info.description"
+        ></div>
+      </div>
+    </div>
+    }
+  </div>
+</section>
+
+<!-- proyectos destacados -->
+<section class="container text-center">
+  <div class="title pt-2">
+    <h2>Proyectos Destacados</h2>
+  </div>
+  <hr class="divider w-25 mx-auto my-4" />
+  @for (project of projects; track $index) {
+  <div class="card mt-4">
+    <div class="card-header pb-0 d-flex flex-row justify-content-between">
+      <p>{{project.year}}</p>
+      <div class="card-header-links d-flex flex-row gap-4">
+        <p>GitHub</p>
+        <p>Video</p>
+      </div>
+    </div>
+    <div class="card-body text-start">
+      <h5 class="card-title">{{project.title}}</h5>
+      <p class="card-text">{{project.description}}</p>
+      <div class="tags ps-2 d-flex flex-row gap-2">
+        @for (tag of project.tags; track $index) {
+        <p class="badge bg-secondary">{{tag}}</p>
+        }
+      </div>
+    </div>
+  </div>
+  }
+</section>
+
+<!-- Habilidades -->
+
+<!-- Contacto -->
+<section class="container text-center pt-5 pb-5">
+  <div class="title">
+    <h2>Contacto</h2>
+  </div>
+  <hr class="divider w-25 mx-auto my-4" />
+  <div class="description">
+    <p class="fs-5">Estoy disponible para nuevos proyectos y colaboraciones.</p>
+    <p>
+      Si tenes un proyecto en mente, una oportunidad laborar o simplemente
+      <br />
+      queres conectar, no dudes en contactarme.
+    </p>
+  </div>
+
+  <div class="card w-25 align-content-center mx-auto mb-4">
+    <div class="card-body">
+      <a href="mailto:nahueltisera03@gmail.com" class="text-decoration-none"
+        >nahueltisera03&#64;gmail.com</a
+      >
+    </div>
+  </div>
+
+  <div class="contact d-flex flex-row justify-content-center gap-3">
+    @for (contactJob of contactsJobs; track $index) {
+    <div class="contact-item">
+      <a [href]="contactJob.url" target="_blank" rel="noopener noreferrer">
+        <i class="{{ contactJob.icon }}"></i>
+        <span>{{ contactJob.name }}</span>
+      </a>
+    </div>
+    }
+  </div>
+</section>

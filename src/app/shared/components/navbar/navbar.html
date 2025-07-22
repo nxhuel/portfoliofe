@@ -1,0 +1,24 @@
+<div
+  class="notion-sidebar d-flex flex-column"
+  (mouseenter)="isSidebarHovered = true"
+  (mouseleave)="isSidebarHovered = false"
+>
+  <ul class="nav flex-column">
+    @for (item of menuItems; track item) {
+    <li
+      class="nav-item"
+      (click)="activeItem = item"
+      [class.active]="activeItem === item"
+    >
+      <div
+        class="sidebar-line"
+        [class.expanded]="isSidebarHovered || activeItem === item"
+      ></div>
+
+      @if (isSidebarHovered ) {
+      <span class="sidebar-text">{{ item.label }}</span>
+      }
+    </li>
+    }
+  </ul>
+</div>
