@@ -16,9 +16,29 @@
       ></div>
 
       @if (isSidebarHovered ) {
-      <span class="sidebar-text">{{ item.label }}</span>
+      <span class="sidebar-text">{{ item.label | translate }}</span>
       }
     </li>
     }
   </ul>
+</div>
+
+<!-- methods toggle theme && language -->
+<div
+  class="form-check form-switch d-flex flex-row justify-content-end align-items-center gap-2 pt-2 pe-4 navbar"
+>
+  <a
+    (click)="toggleLanguage()"
+    class="btn d-flex align-items-center gap-2"
+    aria-label="Toggle dark mode"
+  >
+    {{ isEnglish ? '🇬🇧' : '🇪🇸' }}
+  </a>
+  <a
+    (click)="toggleTheme()"
+    class="btn d-flex align-items-center gap-2"
+    aria-label="Toggle dark mode"
+  >
+    {{ isDark ? '🌙' : '🌞' }}
+  </a>
 </div>

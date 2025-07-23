@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { Contact } from '../../interfaces/contact';
 import { Project } from '../../interfaces/project';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-main',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './main.html',
   styleUrl: './main.scss',
 })
@@ -36,20 +37,20 @@ export class Main {
   // Sobre mi
   infos: { title: string; description: string }[] = [
     {
-      title: 'Back-end',
-      description: 'APIs & Microservicios',
+      title: 'infos.Back-end',
+      description: 'infos.APIs & Microservicios',
     },
     {
-      title: 'Base de Datos',
-      description: 'Diseño & Implementación',
+      title: 'infos.Base de Datos',
+      description: 'infos.Diseño & Implementación',
     },
     {
-      title: 'Análisis',
-      description: 'Relevamiento, Documentación, <br> UML & Arquitectura',
+      title: 'infos.Análisis',
+      description: 'infos.Relevamiento, Documentación, <br> UML & Arquitectura',
     },
     {
-      title: 'Front-end',
-      description: 'Buena experiencia de usuario',
+      title: 'infos.Front-end',
+      description: 'infos.Buena experiencia de usuario',
     },
   ];
 
@@ -59,27 +60,27 @@ export class Main {
       year: '2024',
       github: 'url',
       video: 'video',
-      title: 'Sistema de Gestión Empresarial',
+      title: 'projects.Sistema de Gestión Empresarial',
       description:
-        'API REST completa para gestión de inventarios, ventas y clientes. Implementada con microservicios y arquitectura escalable.',
+        'projects.API REST completa para gestión de inventarios, ventas y clientes Implementada con microservicios y arquitectura escalable',
       tags: ['c#', 'sql server', 'gitbash', 'swagger', 'docker', 'azure'],
     },
     {
       year: '2024',
       github: 'url',
       video: 'video',
-      title: 'Sistema de Gestión Empresarial',
+      title: 'projects.Sistema de Gestión Empresarial',
       description:
-        'API REST completa para gestión de inventarios, ventas y clientes. Implementada con microservicios y arquitectura escalable.',
+        'projects.API REST completa para gestión de inventarios, ventas y clientes Implementada con microservicios y arquitectura escalable',
       tags: ['c#', 'sql server', 'gitbash', 'swagger', 'docker', 'azure'],
     },
     {
       year: '2024',
       github: 'url',
       video: 'video',
-      title: 'Sistema de Gestión Empresarial',
+      title: 'projects.Sistema de Gestión Empresarial',
       description:
-        'API REST completa para gestión de inventarios, ventas y clientes. Implementada con microservicios y arquitectura escalable.',
+        'projects.API REST completa para gestión de inventarios, ventas y clientes Implementada con microservicios y arquitectura escalable',
       tags: ['c#', 'sql server', 'gitbash', 'swagger', 'docker', 'azure'],
     },
   ];
