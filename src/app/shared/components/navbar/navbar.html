@@ -16,7 +16,7 @@
       ></div>
 
       @if (isSidebarHovered ) {
-      <span class="sidebar-text">{{ item.label | translate }}</span>
+      <a (click)="scrollTo(item.url)" class="sidebar-text">{{ item.label | translate }}</a>
       }
     </li>
     }

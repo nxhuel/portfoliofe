@@ -15,22 +15,22 @@ export class Main {
     {
       name: 'GitHub',
       icon: 'bi bi-github',
-      url: '',
+      url: 'https://github.com/nxhuel',
     },
     {
       name: 'LinkedIn',
-      icon: 'bi bi-github',
-      url: '',
+      icon: 'bi bi-linkedin',
+      url: 'https://www.linkedin.com/in/tisera-nahuel-ab3864219/',
     },
     {
       name: 'Email',
-      icon: 'bi bi-github',
-      url: '',
+      icon: 'bi bi-envelope',
+      url: 'mailto:nahueltisera03@gmail.com',
     },
     {
       name: 'Blog',
-      icon: 'bi bi-github',
-      url: '',
+      icon: 'bi bi-dev-to',
+      url: 'https://dev.to/nxhuel',
     },
   ];
 
@@ -91,12 +91,12 @@ export class Main {
     {
       name: 'GitHub',
       icon: 'bi bi-github',
-      url: '',
+      url: 'https://github.com/nxhuel',
     },
     {
       name: 'LinkedIn',
-      icon: 'bi bi-github',
-      url: '',
+      icon: 'bi bi-linkedin',
+      url: 'https://www.linkedin.com/in/tisera-nahuel-ab3864219/',
     },
   ];
 }

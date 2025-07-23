@@ -53,6 +53,16 @@
   background-color: #00000000;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar-text:hover {
+  opacity: 0.4;
+  
+}
+
 // light mode
 [data-bs-theme="light"] {
   .notion-sidebar {

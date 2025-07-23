@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { url } from 'inspector';
 
 @Component({
   selector: 'app-navbar',
@@ -43,11 +44,17 @@ export class Navbar implements OnInit {
   // Navbar Items
   isSidebarHovered = false;
   activeItem: any = null;
-
   menuItems = [
-    { label: 'Inicio' },
-    { label: 'Sobre Mí' },
-    { label: 'Proyectos Destacados' },
-    { label: 'Contacto' },
+    { label: 'Inicio', url: '#inicio' },
+    { label: 'Sobre Mí', url: '#sobre-mi' },
+    { label: 'Proyectos Destacados', url: '#proyectos-destacados' },
+    { label: 'Contacto', url: '#contacto' },
   ];
+
+  scrollTo(target: string) {
+    const el = document.querySelector(target);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
