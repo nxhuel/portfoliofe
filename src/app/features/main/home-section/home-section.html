@@ -1,0 +1,26 @@
+<section id="inicio" class="container pt-5 text-center">
+  <div  class="title">
+    <h2>{{'Desarrollador' | translate}}</h2>
+  </div>
+  <div class="subtitle">
+    <h3>{{'Backend & Analista de Sistemas' | translate}}</h3>
+  </div>
+  <hr class="divider w-50 mx-auto my-4" />
+  <div class="description">
+    <p>
+      {{'Creando arquitecturas robustas y analizando sistemas complejos' |
+      translate}}.
+    </p>
+    <p>{{'Enfocado en soluciones elegantes y escalables'| translate}}.</p>
+  </div>
+  <div class="contact d-flex flex-row justify-content-center gap-3">
+    @for (contact of contacts; track $index) {
+    <div class="contact-item">
+      <a [href]="contact.url" target="_blank" rel="noopener noreferrer">
+        <i class="{{ contact.icon }}"></i>
+        <span>{{ contact.name }}</span>
+      </a>
+    </div>
+    }
+  </div>
+</section>

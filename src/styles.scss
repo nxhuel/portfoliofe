@@ -1,8 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-html {
-  scroll-behavior : smooth;
+
+
+// span fonts styles
+.experience {
+  font-size: 0.875rem; /* Tamaño pequeño */
+  font-weight: 400; /* Normal */
+  color: #6c757d; /* Color secundario de Bootstrap */
+  font-family: inherit;
 }
 
+.sidebar-item {
+  font-size: 0.875rem; /* Tamaño pequeño */
+  font-weight: 400; /* Normal */
+  color: #6c757d; /* Color secundario de Bootstrap */
+  font-family: inherit;
+}
 
 // light mode
 [data-bs-theme="light"] {

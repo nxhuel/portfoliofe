@@ -1,0 +1,45 @@
+<section id="sobre-mi" class="container text-center pt-5">
+  <div class="title">
+    <h2>{{'Sobre Mí' | translate}}</h2>
+  </div>
+  <hr class="divider w-25 mx-auto my-4" />
+  <div class="description">
+    <p>
+      {{'Estudiante de Análisis de Sistemas con experiencia en desarrollo desoftware. Me especializo en arquitecturas backend robustas usando' | translate}}
+      <strong>C#</strong>, <strong>ASP.NET Core</strong>,
+      <strong>Entity Framework Core</strong>{{' como ' | translate}}ORM,
+      <strong>SQL Server</strong> {{'como motor de base de datos y' | translate}}
+      <strong>Azure</strong> {{'para su despliegue. Trabajo de manera eficiente y ágil, siguiendo metodologías ágiles como' | translate}} <strong>Scrum</strong>, {{'principalmente bajo el paradigma de' | translate}} <strong>POO</strong>,{{' respetando los principios' | translate}} <strong>SOLID</strong> {{'y buenas prácticas de' | translate}}
+      <strong>{{'seguridad' | translate}}</strong>, {{'con el objetivo de brindar sistemas' | translate}}
+      <span class="bg-warning ps-1 pe-1">{{'escalables' | translate}}</span> {{'y' | translate}} <span class="bg-warning ps-1 pe-1">{{'mantenibles' | translate}}</span>.
+    </p>
+    <p>
+      {{'También tengo conocimientos en' | translate}} <strong>Angular</strong>, {{'aprovechando su arquitectura modular' | translate}}, <strong>{{'formularios reactivos' | translate}}</strong>, {{'uso de' | translate}}
+      <strong>pipes</strong> {{'y componentes reutilizables, integrando interfaces limpias con' | translate}} <strong>Bootstrap</strong>.
+    </p>
+    <p>
+      {{'Participo activamente en el relevamiento y documentación de sistemas, aplicando análisis funcional y diagramas UML' | translate}}.
+    </p>
+    <p>
+      {{'Podés ver más sobre mi formación y experiencia en mi' | translate}}
+      <a href="URL_DE_TU_CV" target="_blank">CV</a>.
+    </p>
+    <a href="#"><strong>#Drinkingmate24/7</strong></a>
+  </div>
+
+  <div
+    class="card-container pt-5 pb-5 row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"
+  >
+    @for (info of infos; track $index) {
+    <div class="col">
+      <div class="card card-info h-100 pt-2">
+        <div class="card-title">{{info.title | translate}}</div>
+        <div
+          class="card-subtitle text-secondary"
+          [innerHTML]="info.description | translate"
+        ></div>
+      </div>
+    </div>
+    }
+  </div>
+</section>

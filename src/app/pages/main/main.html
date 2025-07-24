@@ -1,141 +1,68 @@
-<!-- Inicio -->
-<section id="inicio" class="container pt-5 text-center">
-  <div  class="title">
-    <h2>{{'Desarrollador' | translate}}</h2>
-  </div>
-  <div class="subtitle">
-    <h3>{{'Backend & Analista de Sistemas' | translate}}</h3>
-  </div>
-  <hr class="divider w-50 mx-auto my-4" />
-  <div class="description">
-    <p>
-      {{'Creando arquitecturas robustas y analizando sistemas complejos' |
-      translate}}.
-    </p>
-    <p>{{'Enfocado en soluciones elegantes y escalables'| translate}}.</p>
-  </div>
-  <div class="contact d-flex flex-row justify-content-center gap-3">
-    @for (contact of contacts; track $index) {
-    <div class="contact-item">
-      <a [href]="contact.url" target="_blank" rel="noopener noreferrer">
-        <i class="{{ contact.icon }}"></i>
-        <span>{{ contact.name }}</span>
-      </a>
-    </div>
-    }
-  </div>
-</section>
+<main>
+  <!-- inicio -->
+  <app-home-section></app-home-section>
+  <!-- sobre mi -->
+  <app-about-me-section></app-about-me-section>
 
-<!-- Sobre mi -->
-<section id="sobre-mi" class="container text-center pt-5">
-  <div class="title">
-    <h2>{{'Sobre Mí' | translate}}</h2>
-  </div>
-  <hr class="divider w-25 mx-auto my-4" />
-  <div class="description">
-    <p>
-      {{'Estudiante de Análisis de Sistemas con experiencia en desarrollo desoftware. Me especializo en arquitecturas backend robustas usando' | translate}}
-      <strong>C#</strong>, <strong>ASP.NET Core</strong>,
-      <strong>Entity Framework Core</strong>{{' como ' | translate}}ORM,
-      <strong>SQL Server</strong> {{'como motor de base de datos y' | translate}}
-      <strong>Azure</strong> {{'para su despliegue. Trabajo de manera eficiente y ágil, siguiendo metodologías ágiles como' | translate}} <strong>Scrum</strong>, {{'principalmente bajo el paradigma de' | translate}} <strong>POO</strong>,{{' respetando los principios' | translate}} <strong>SOLID</strong> {{'y buenas prácticas de' | translate}}
-      <strong>{{'seguridad' | translate}}</strong>, {{'con el objetivo de brindar sistemas' | translate}}
-      <span class="bg-warning ps-1 pe-1">{{'escalables' | translate}}</span> {{'y' | translate}} <span class="bg-warning ps-1 pe-1">{{'mantenibles' | translate}}</span>.
-    </p>
-    <p>
-      {{'También tengo conocimientos en' | translate}} <strong>Angular</strong>, {{'aprovechando su arquitectura modular' | translate}}, <strong>{{'formularios reactivos' | translate}}</strong>, {{'uso de' | translate}}
-      <strong>pipes</strong> {{'y componentes reutilizables, integrando interfaces limpias con' | translate}} <strong>Bootstrap</strong>.
-    </p>
-    <p>
-      {{'Participo activamente en el relevamiento y documentación de sistemas, aplicando análisis funcional y diagramas UML' | translate}}.
-    </p>
-    <p>
-      {{'Podés ver más sobre mi formación y experiencia en mi' | translate}}
-      <a href="URL_DE_TU_CV" target="_blank">CV</a>.
-    </p>
-    <a href="#"><strong>#Drinkingmate24/7</strong></a>
-  </div>
+  <!-- proyectos destacados -->
+  <app-projects-section></app-projects-section>
 
-  <div
-    class="card-container pt-5 pb-5 row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"
-  >
-    @for (info of infos; track $index) {
-    <div class="col">
-      <div class="card card-info h-100 pt-2">
-        <div class="card-title">{{info.title | translate}}</div>
-        <div
-          class="card-subtitle text-secondary"
-          [innerHTML]="info.description | translate"
-        ></div>
-      </div>
-    </div>
-    }
-  </div>
-</section>
-
-<!-- proyectos destacados -->
-<section id="proyectos-destacados" class="container text-center">
-  <div class="title pt-2">
-    <h2>{{'Proyectos Destacados' | translate}}</h2>
-  </div>
-  <hr class="divider w-25 mx-auto my-4" />
-  @for (project of projects; track $index) {
-  <div class="card card-project mt-4">
-    <div
-      class="card-header card-project-header pb-0 d-flex flex-row justify-content-between"
-    >
-      <p>{{project.year}}</p>
-      <div class="card-header-links d-flex flex-row gap-4">
-        <p>GitHub</p>
-        <p>Video</p>
-      </div>
-    </div>
-    <div class="card-body card-project-body text-start">
-      <h5 class="card-title">{{project.title | translate}}</h5>
-      <p class="card-text">{{project.description | translate}}</p>
-      <div class="tags ps-2 d-flex flex-row gap-2">
-        @for (tag of project.tags; track $index) {
-        <p class="badge bg-secondary">{{tag}}</p>
-        }
-      </div>
-    </div>
-  </div>
-  }
-</section>
-
-<!-- Habilidades -->
-
-<!-- Contacto -->
-<section id="contacto" class="container text-center pt-5 pb-5">
-  <div class="title">
-    <h2>{{'Contacto' | translate}}</h2>
-  </div>
-  <hr class="divider w-25 mx-auto my-4" />
-  <div class="description">
-    <p class="fs-5">{{'Estoy disponible para nuevos proyectos y colaboraciones' | translate}}.</p>
-    <p>
-      {{'Si tenes un proyecto en mente, una oportunidad laborar o simplemente' | translate}}
-      <br />
-      {{'queres conectar, no dudes en contactarme' | translate}}.
+  <!-- experiencia profesional-->
+  <section id="experiencia-profesional" class="container text-center pt-5">
+    <h2 class="mb-4">Experiencia Profesional</h2>
+    <hr class="w-25 mx-auto mb-4" />
+    <p class="text-muted mb-5">
+      Mi trayectoria profesional desarrollando soluciones técnicas innovadoras y
+      liderando proyectos de impacto en diferentes contextos y tecnologías.
     </p>
-  </div>
-
-  <div class="card card-email w-25 align-content-center mx-auto mb-4">
-    <div class="card-body">
-      <a href="mailto:nahueltisera03@gmail.com" target="_blank" class="text-decoration-none"
-        >nahueltisera03&#64;gmail.com</a
+    <!-- card -->
+    <div class="card">
+      <!-- header -->
+      <div
+        class="card-header d-flex justify-content-between align-items-center"
       >
+        <div class="d-flex flex-column align-items-start">
+          <h3 class="card-title">Pasante Desarrollador de Software</h3>
+          <p class="card-subtitle text-muted">AGIP</p>
+        </div>
+        <div class="d-flex flex-column align-items-start fs-6 text-muted">
+          <span class="experience">📅 2024 - 2024</span>
+          <span class="experience">📍 CABA, Argentina</span>
+        </div>
+      </div>
+      <!-- body -->
+      <div class="card-body">
+        <div class="text-first">
+          <p class="card-text text-start text-muted">
+            Participé en el desarrollo de una aplicación web para la gestión de
+            trámites administrativos, utilizando tecnologías como Angular y
+            Node.js. Implementé mejoras en la interfaz de usuario y optimicé el
+            rendimiento del sistema.
+          </p>
+        </div>
+        <div class="text-second text-start">
+          <p class="card-title pt-2 fw-bolder">Tecnologías</p>
+          <ul class="list-unstyled d-flex flex-row gap-2">
+            <li class="badge bg-secondary">Angular</li>
+            <li class="badge bg-secondary">Node.js</li>
+            <li class="badge bg-secondary">MongoDB</li>
+            <li class="badge bg-secondary">Bootstrap</li>
+          </ul>
+        </div>
+        <div class="text-third text-start">
+          <p class="card-title fw-bolder">Logros destacados</p>
+          <ul class="">
+            <li>Mejora del rendimiento de la aplicación en un 30%</li>
+            <li>
+              Implementación de una nueva funcionalidad de búsqueda avanzada
+            </li>
+            <li>Colaboración efectiva en un equipo ágil</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="contact d-flex flex-row justify-content-center gap-3">
-    @for (contactJob of contactsJobs; track $index) {
-    <div class="contact-item">
-      <a [href]="contactJob.url" target="_blank" rel="noopener noreferrer">
-        <i class="{{ contactJob.icon }}"></i>
-        <span>{{ contactJob.name }}</span>
-      </a>
-    </div>
-    }
-  </div>
-</section>
+  <!-- Contacto -->
+  <app-contact-section></app-contact-section>
+</main>

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { url } from 'inspector';
 
 @Component({
   selector: 'app-navbar',
@@ -41,13 +40,14 @@ export class Navbar implements OnInit {
     localStorage.setItem('bsTheme', newTheme);
   }
 
-  // Navbar Items
+  // Sidebar Items
   isSidebarHovered = false;
   activeItem: any = null;
-  menuItems = [
+  menuItems: {label: string, url: string}[] = [
     { label: 'Inicio', url: '#inicio' },
     { label: 'Sobre Mí', url: '#sobre-mi' },
     { label: 'Proyectos Destacados', url: '#proyectos-destacados' },
+    { label: 'Experiencia Profesional', url: '#experiencia-profesional' },
     { label: 'Contacto', url: '#contacto' },
   ];
 

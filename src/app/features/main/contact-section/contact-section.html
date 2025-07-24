@@ -1,0 +1,33 @@
+<section id="contacto" class="container text-center pt-5 pb-5">
+  <div class="title">
+    <h2>{{'Contacto' | translate}}</h2>
+  </div>
+  <hr class="divider w-25 mx-auto my-4" />
+  <div class="description">
+    <p class="fs-5">{{'Estoy disponible para nuevos proyectos y colaboraciones' | translate}}.</p>
+    <p>
+      {{'Si tenes un proyecto en mente, una oportunidad laborar o simplemente' | translate}}
+      <br />
+      {{'queres conectar, no dudes en contactarme' | translate}}.
+    </p>
+  </div>
+
+  <div class="card card-email w-25 align-content-center mx-auto mb-4">
+    <div class="card-body">
+      <a href="mailto:nahueltisera03@gmail.com" target="_blank" class="text-decoration-none"
+        >nahueltisera03&#64;gmail.com</a
+      >
+    </div>
+  </div>
+
+  <div class="contact d-flex flex-row justify-content-center gap-3">
+    @for (contactJob of contactsJobs; track $index) {
+    <div class="contact-item">
+      <a [href]="contactJob.url" target="_blank" rel="noopener noreferrer">
+        <i class="{{ contactJob.icon }}"></i>
+        <span class="contact">{{ contactJob.name }}</span>
+      </a>
+    </div>
+    }
+  </div>
+</section>
