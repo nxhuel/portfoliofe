@@ -9,6 +9,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './navbar.scss',
 })
 export class Navbar implements OnInit {
+  scrollTo(target: string) {
+    const element = document.querySelector(target);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   // Language toggle state
   isEnglish: boolean = false;
 
@@ -43,18 +50,35 @@ export class Navbar implements OnInit {
   // Sidebar Items
   isSidebarHovered = false;
   activeItem: any = null;
-  menuItems: {label: string, url: string}[] = [
+
+  menuItems: MenuItem[] = [
     { label: 'Inicio', url: '#inicio' },
-    { label: 'Sobre Mí', url: '#sobre-mi' },
-    { label: 'Proyectos Destacados', url: '#proyectos-destacados' },
-    { label: 'Experiencia Profesional', url: '#experiencia-profesional' },
+    {
+      label: 'Sobre Mí',
+      url: '#sobre-mi',
+      subItems: [
+        { label: 'Habilidades Técnicas', url: '#habilidades-tecnicas' },
+        { label: 'Formación Académica', url: '#formacion-academica' },
+      ],
+    },
+    {
+      label: 'Proyectos Destacados',
+      url: '#proyectos-destacados',
+      subItems: [
+        {
+          label: 'Gestión de Tareas',
+          url: '#gestion-de-tareas',
+        },
+        { label: 'Clon Aula Virtual', url: '#clon-aula-virtual' },
+        { label: 'Sú agip', url: '#su-agip' },
+        { label: 'Ver más Proyectos', url: '#' },
+      ],
+    },
+    {
+      label: 'Experiencia Profesional',
+      url: '#experiencia-profesional',
+      subItems: [{ label: 'Agip', url: '#pasante-desarrollador-de-software' }],
+    },
     { label: 'Contacto', url: '#contacto' },
   ];
-
-  scrollTo(target: string) {
-    const el = document.querySelector(target);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
 }

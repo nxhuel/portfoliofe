@@ -3,42 +3,98 @@
     <h2>{{'Proyectos Destacados' | translate}}</h2>
   </div>
   <hr class="divider w-25 mx-auto my-4" />
-  <ul class="nav nav-pills">
-    <li class="nav-item dropdown">
-      <a
-        class="nav-link active dropdown-toggle"
-        data-bs-toggle="dropdown"
-        role="button"
-        aria-expanded="false"
-        >Filtrar por Tecnologías
-      </a>
-      <ul class="dropdown-menu tech-scroll">
-        <li>
-          <a class="dropdown-item" (click)="clearFilter()">Todas</a>
-        </li>
-        @for (tag of uniqueTags; track $index) {
-        <li>
-          <a
-            class="dropdown-item"
-            (click)="filterByTag(tag)"
-            [class.active]="tag === selectedTag"
-            >{{ tag }}</a
-          >
-        </li>
-        }
-      </ul>
-    </li>
-  </ul>
+  <div class="d-flex justify-content-end">
+    <ul class="nav nav-pills">
+      <li class="nav-item dropdown w-100 text-end">
+        <a
+          class="btn btn-dark dropdown-toggle"
+          data-bs-toggle="dropdown"
+          role="button"
+          aria-expanded="false"
+          >Filtrar por Tecnologías
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end tech-scroll">
+          <li>
+            <a class="dropdown-item w-100" (click)="clearFilter()">Todas</a>
+          </li>
+          @for (tag of uniqueTags; track $index) {
+          <li>
+            <a
+              class="dropdown-item"
+              (click)="filterByTag(tag)"
+              [class.active]="tag === selectedTag"
+              >{{ tag }}</a
+            >
+          </li>
+          }
+        </ul>
+      </li>
+    </ul>
+  </div>
 
   @for (project of filteredProjects; track $index) {
-  <div class="card card-project mt-4">
+  <div [attr.id]=project.id  class="card card-project mt-4">
     <div
       class="card-header card-project-header pb-0 d-flex flex-row justify-content-between"
     >
       <p>{{project.year}}</p>
       <div class="card-header-links d-flex flex-row gap-4">
-        <p>GitHub</p>
-        <p>Video</p>
+        <button class="btn">
+          <a href="{{project.github}} " target="_blank">GitHub</a>
+        </button>
+        <button
+          type="button"
+          class="btn"
+          data-bs-toggle="modal"
+          [attr.data-bs-target]="'#videoModal' + $index"
+        >
+          Video
+        </button>
+        <!-- modal video -->
+        <div
+          class="modal fade"
+          [attr.id]="'videoModal' + $index"
+          tabindex="-1"
+           [attr.aria-labelledby]="'videoModalLabel' + $index"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" [attr.id]="'videoModalLabel' + $index">
+                  {{project.title}}
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <video controls class="w-100 rounded">
+                  <source
+                    [attr.src]="project.video"
+                    [attr.type]="project.type"
+                  />
+                  Tu navegador no soporta el video.
+                </video>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fin modal video -->
       </div>
     </div>
     <div class="card-body card-project-body text-start">
@@ -52,4 +108,5 @@
     </div>
   </div>
   }
+
 </section>

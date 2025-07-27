@@ -60,8 +60,97 @@ a {
 
 .sidebar-text:hover {
   opacity: 0.4;
-  
 }
+
+// sdasd
+.notion-sidebar .nav-item {
+  height: auto; /* Ya no es fijo, permite crecer si hay subítems */
+  display: flex;
+  align-items: flex-start; /* alinea el contenido arriba */
+  padding: 6px 0;
+}
+
+/* Nuevo: contenedor textual de cada ítem */
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4px;
+}
+
+/* Texto del ítem principal */
+.sidebar-text {
+  white-space: nowrap;
+  transition: opacity 0.2s;
+  font-size: 0.95rem;
+}
+
+/* Submenú */
+.submenu {
+  margin-top: 4px;
+  padding-left: 0.8rem; /* Menos indentado */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Subítem */
+.sidebar-subtext {
+  font-size: 0.83rem;
+  text-decoration: none;
+  padding-left: 0.4rem;
+}
+
+.sidebar-subtext:hover {
+  color: #00aaff;
+}
+
+
+/* Contenedor del submenú */
+.submenu {
+  padding-left: 0.5rem;
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column; /* Asegura que se apilen verticalmente */
+}
+
+/* Estilo de cada subítem */
+.nav-subitem {
+  display: flex;
+  align-items: center;
+  margin: 0.2rem 0;
+  list-style: none;
+}
+
+
+/* Línea vertical para subítems */
+.sidebar-sub-line {
+  width: 3px;
+  height: 18px;
+  background-color: #00aaff;
+  margin-right: 8px;
+  border-radius: 1px;
+}
+
+
+/* Texto de subítem */
+.sidebar-subtext {
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding-left: 0.5rem;
+  display: block;
+}
+
+/* Hover del subítem */
+.sidebar-subtext:hover {
+  color: #00aaff;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+}
+
 
 // light mode
 [data-bs-theme="light"] {

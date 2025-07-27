@@ -16,10 +16,25 @@
         [class.expanded]="isSidebarHovered || activeItem === item"
       ></div>
 
-      @if (isSidebarHovered ) {
-      <a (click)="scrollTo(item.url)" class="sidebar-text sidebar-item"
-        >{{ item.label | translate }}</a
-      >
+      @if (isSidebarHovered) {
+      <div class="sidebar-content">
+        <a (click)="scrollTo(item.url)" class="sidebar-text sidebar-item">
+          {{ item.label | translate }}
+        </a>
+
+        @if (item.subItems?.length) {
+        <ul class="submenu">
+          @for (sub of item.subItems; track sub) {
+          <li class="nav-subitem d-flex align-items-center">
+            <div class="sidebar-sub-line"></div>
+            <a (click)="scrollTo(sub.url)" class="sidebar-subtext">
+              {{ sub.label | translate }}
+            </a>
+          </li>
+          }
+        </ul>
+        }
+      </div>
       }
     </li>
     }
