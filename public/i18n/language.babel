@@ -50,6 +50,21 @@
 						</translations>
 					</concept_node>
 					<concept_node>
+						<name>Además, colaboré en la integración y optimización de bases de datos SQL Server, asegurando la correcta manipulación y consulta de datos</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
 						<name>aprovechando su arquitectura modular</name>
 						<description/>
 						<comment/>
@@ -65,7 +80,82 @@
 						</translations>
 					</concept_node>
 					<concept_node>
+						<name>Automatización de procesos internos: Desarrollé módulos que optimizaron tareas repetitivas, reduciendo el tiempo de procesamiento en un 30</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
 						<name>Backend &amp; Analista de Sistemas</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Cada uno incluye su descripción, tecnologías utilizadas y documentación en GitHub</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Certificado</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Click en </name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Colaboración efectiva: Trabajé en equipo utilizando metodologías ágiles, participando en reuniones diarias y revisiones de código para asegurar la calidad y entrega puntual del desarrollo</name>
 						<description/>
 						<comment/>
 						<translations>
@@ -155,6 +245,36 @@
 						</translations>
 					</concept_node>
 					<concept_node>
+						<name>Durante mi pasantía como Desarrollador de Software en AGIP, participé activamente en el desarrollo y mantenimiento de aplicaciones web orientadas a la gestión administrativa</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>En curso</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
 						<name>Enfocado en soluciones elegantes y escalables</name>
 						<description/>
 						<comment/>
@@ -220,6 +340,51 @@
 						</children>
 					</folder_node>
 					<concept_node>
+						<name>Experiencia Profesional</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Filtrar por Tecnologías</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Formación Académica</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
 						<name>formularios reactivos</name>
 						<description/>
 						<comment/>
@@ -236,6 +401,36 @@
 					</concept_node>
 					<concept_node>
 						<name>Gracias por visitar mi portfolio</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Habilidades Técnicas</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Implementé interfaces responsivas usando HTML5, CSS3, JavaScript y Bootstrap, mejorando la experiencia del usuario</name>
 						<description/>
 						<comment/>
 						<translations>
@@ -390,7 +585,52 @@
 						</translations>
 					</concept_node>
 					<concept_node>
+						<name>Logros destacados</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
 						<name>mantenibles</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Mejora en la interfaz de usuario: Implementé cambios en el front-end que aumentaron la usabilidad y accesibilidad de las aplicaciones utilizadas por el equipo</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Mi trayectoria profesional desarrollando soluciones técnicas innovadoras y liderando proyectos de impacto en diferentes contextos y tecnologías</name>
 						<description/>
 						<comment/>
 						<translations>
@@ -425,7 +665,37 @@
 						</children>
 					</folder_node>
 					<concept_node>
+						<name>para volver a la página principal</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
 						<name>Participo activamente en el relevamiento y documentación de sistemas, aplicando análisis funcional y diagramas UML</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Pasante Desarrollador de Software</name>
 						<description/>
 						<comment/>
 						<translations>
@@ -488,7 +758,97 @@
 								</translations>
 							</concept_node>
 							<concept_node>
+								<name>Clon Aula Virtual - IFTS 21</name>
+								<description/>
+								<comment/>
+								<translations>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>es-ES</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+							<concept_node>
+								<name>Gestión de Tareas Diarias</name>
+								<description/>
+								<comment/>
+								<translations>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>es-ES</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+							<concept_node>
+								<name>Plataforma integral para instituciones educativas que permite gestionar usuarios, materias e inscripciones de forma ágil y segura Desarrollada con Java (Spring Boot) y FrontEnd web rapida y facil de mantener, con arquitectura REST y enfoque escalable Actualmente el servidor se encuentra pausado por cuestiones económicas, pero puede activarse para su revisión bajo solicitud</name>
+								<description/>
+								<comment/>
+								<translations>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>es-ES</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+							<concept_node>
+								<name>Sistema completo para gestión de útiles provenientes de todas las áreas del organismo, permitiendo tener información actualizada del stock disponible, objeto que se pide, y toda la información correspondiente para ser auditada Implementada con arquitectura Modelo-Vista-Plantilla (MVT) y Shared-Nothing (Múltiples aplicaciones independientes que forman el proyecto completo)</name>
+								<description/>
+								<comment/>
+								<translations>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>es-ES</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+							<concept_node>
 								<name>Sistema de Gestión Empresarial</name>
+								<description/>
+								<comment/>
+								<translations>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>es-ES</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+							<concept_node>
+								<name>Sistema de Útiles - AGIP</name>
+								<description/>
+								<comment/>
+								<translations>
+									<translation>
+										<language>en-US</language>
+										<approved>false</approved>
+									</translation>
+									<translation>
+										<language>es-ES</language>
+										<approved>false</approved>
+									</translation>
+								</translations>
+							</concept_node>
+							<concept_node>
+								<name>Software completo para la gestión de tareas personales, diseñada para ofrecer una experiencia ágil, organizada y moderna Permite crear, editar y eliminar tareas, con una interfaz clara y responsive Desarrollada con Angular, Bootstrap y SCSS en el frontend, y ASP NET Core con SQL Server en el backend Incluye pruebas con XUnit y documentación de API con Swagger</name>
 								<description/>
 								<comment/>
 								<translations>
@@ -521,6 +881,36 @@
 					</concept_node>
 					<concept_node>
 						<name>queres conectar, no dudes en contactarme</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Recopilación de Proyectos</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Repositorio de los proyectos que he desarrollado, ordenados del más reciente al más antiguo</name>
 						<description/>
 						<comment/>
 						<translations>
@@ -580,6 +970,21 @@
 						</translations>
 					</concept_node>
 					<concept_node>
+						<name>También apliqué buenas prácticas en el control de versiones con GitBash y apoyé en pruebas de APIs con Postman para garantizar la calidad del software</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
 						<name>También tengo conocimientos en</name>
 						<description/>
 						<comment/>
@@ -595,7 +1000,92 @@
 						</translations>
 					</concept_node>
 					<concept_node>
+						<name>Tecnicatura Superior en Análisis de Sistemas</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Tecnologías</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<folder_node>
+						<name>Tisera Nahuel de 21 años en CABA, Argentina</name>
+						<children>
+							<folder_node>
+								<name> Estudiante de Análisis de Sistemas con experiencia en desarrollo desoftware</name>
+								<children>
+									<concept_node>
+										<name> Me especializo en arquitecturas backend robustas usando</name>
+										<description/>
+										<comment/>
+										<translations>
+											<translation>
+												<language>en-US</language>
+												<approved>false</approved>
+											</translation>
+											<translation>
+												<language>es-ES</language>
+												<approved>false</approved>
+											</translation>
+										</translations>
+									</concept_node>
+								</children>
+							</folder_node>
+						</children>
+					</folder_node>
+					<concept_node>
+						<name>Trabajé con tecnologías como Python y Django para construir funcionalidades robustas y eficientes, utilizando Jinja 2 para la generación de plantillas dinámicas</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
 						<name>uso de</name>
+						<description/>
+						<comment/>
+						<translations>
+							<translation>
+								<language>en-US</language>
+								<approved>false</approved>
+							</translation>
+							<translation>
+								<language>es-ES</language>
+								<approved>false</approved>
+							</translation>
+						</translations>
+					</concept_node>
+					<concept_node>
+						<name>Ver más Proyectos</name>
 						<description/>
 						<comment/>
 						<translations>

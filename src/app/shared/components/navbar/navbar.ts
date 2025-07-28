@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, RouterLink],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
@@ -52,7 +53,7 @@ export class Navbar implements OnInit {
   activeItem: any = null;
 
   menuItems: MenuItem[] = [
-    { label: 'Inicio', url: '#inicio' },
+    { label: 'Inicio', url: '/portfolio' },
     {
       label: 'Sobre Mí',
       url: '#sobre-mi',
@@ -71,7 +72,7 @@ export class Navbar implements OnInit {
         },
         { label: 'Clon Aula Virtual', url: '#clon-aula-virtual' },
         { label: 'Sú agip', url: '#su-agip' },
-        { label: 'Ver más Proyectos', url: '#' },
+        { label: 'Ver más Proyectos', url: '/portfolio/projects' },
       ],
     },
     {

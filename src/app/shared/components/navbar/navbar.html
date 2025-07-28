@@ -18,18 +18,28 @@
 
       @if (isSidebarHovered) {
       <div class="sidebar-content">
+        @if (item.url.startsWith('#')) {
         <a (click)="scrollTo(item.url)" class="sidebar-text sidebar-item">
           {{ item.label | translate }}
         </a>
-
-        @if (item.subItems?.length) {
+        } @else {
+        <a [routerLink]="item.url" class="sidebar-text sidebar-item">
+          {{ item.label | translate }}
+        </a>
+        } @if (item.subItems?.length) {
         <ul class="submenu">
           @for (sub of item.subItems; track sub) {
           <li class="nav-subitem d-flex align-items-center">
             <div class="sidebar-sub-line"></div>
+            @if (sub.url.startsWith('#')) {
             <a (click)="scrollTo(sub.url)" class="sidebar-subtext">
               {{ sub.label | translate }}
             </a>
+            } @else {
+            <a [routerLink]="sub.url" class="sidebar-subtext">
+              {{ sub.label | translate }}
+            </a>
+            }
           </li>
           }
         </ul>

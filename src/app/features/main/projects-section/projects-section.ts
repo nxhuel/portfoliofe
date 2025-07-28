@@ -38,9 +38,9 @@ export class ProjectsSection {
       github: 'https://github.com/nxhuel/toDoList',
       video: '../../../../assets/videos/toDoListDoc.webm',
       type: 'video/webm',
-      title: 'Gestión de Tareas Diarias',
+      title: 'projects.Gestión de Tareas Diarias',
       description:
-        'Software completo para la gestión de tareas personales, diseñada para ofrecer una experiencia ágil, organizada y moderna. Permite crear, editar y eliminar tareas, con una interfaz clara y responsive. Desarrollada con Angular, Bootstrap y SCSS en el frontend, y ASP.NET Core con SQL Server en el backend. Incluye pruebas con XUnit y documentación de API con Swagger.',
+        'projects.Software completo para la gestión de tareas personales, diseñada para ofrecer una experiencia ágil, organizada y moderna Permite crear, editar y eliminar tareas, con una interfaz clara y responsive Desarrollada con Angular, Bootstrap y SCSS en el frontend, y ASP NET Core con SQL Server en el backend Incluye pruebas con XUnit y documentación de API con Swagger',
       tags: [
         'HTML5',
         'SCSS',
@@ -62,9 +62,9 @@ export class ProjectsSection {
       github: 'url',
       video: '../../../../assets/videos/aulaVirtualDoc.webm',
       type: 'video/webm',
-      title: 'Clon Aula Virtual - IFTS 21',
+      title: 'projects.Clon Aula Virtual - IFTS 21',
       description:
-        'Plataforma integral para instituciones educativas que permite gestionar usuarios, materias e inscripciones de forma ágil y segura. Desarrollada con Java (Spring Boot) y FrontEnd web rapida y facil de mantener, con arquitectura REST y enfoque escalable. Actualmente el servidor se encuentra pausado por cuestiones económicas, pero puede activarse para su revisión bajo solicitud.',
+        'projects.Plataforma integral para instituciones educativas que permite gestionar usuarios, materias e inscripciones de forma ágil y segura Desarrollada con Java (Spring Boot) y FrontEnd web rapida y facil de mantener, con arquitectura REST y enfoque escalable Actualmente el servidor se encuentra pausado por cuestiones económicas, pero puede activarse para su revisión bajo solicitud',
       tags: [
         'HTML5',
         'CSS3',
@@ -84,9 +84,9 @@ export class ProjectsSection {
       github: 'https://github.com/nxhuel/SistemaUtilesAgip',
       video: '../../../../assets/videos/Suagipdoc.mp4',
       type: 'video/mp4',
-      title: 'Sistema de Útiles - AGIP',
+      title: 'projects.Sistema de Útiles - AGIP',
       description:
-        'Sistema completo para gestión de útiles provenientes de todas las áreas del organismo, permitiendo tener información actualizada del stock disponible, objeto que se pide, y toda la información correspondiente para ser auditada. Implementada con arquitectura Modelo-Vista-Plantilla (MVT) y Shared-Nothing (Múltiples aplicaciones independientes que forman el proyecto completo).',
+        'projects.Sistema completo para gestión de útiles provenientes de todas las áreas del organismo, permitiendo tener información actualizada del stock disponible, objeto que se pide, y toda la información correspondiente para ser auditada Implementada con arquitectura Modelo-Vista-Plantilla (MVT) y Shared-Nothing (Múltiples aplicaciones independientes que forman el proyecto completo)',
       tags: [
         'Python',
         'Django',
