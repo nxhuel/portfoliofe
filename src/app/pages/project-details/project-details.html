@@ -1,11 +1,12 @@
 <section class="pt-5 container">
   <h2 class="text-center">{{'Recopilación de Proyectos' | translate}}</h2>
   <p class="text-center">
-    {{'Repositorio de los proyectos que he desarrollado, ordenados del más reciente al más antiguo' | translate}}. 
-    {{'Cada uno incluye su descripción, tecnologías utilizadas y documentación en GitHub' | translate}}.
+    {{'Repositorio de los proyectos que he desarrollado, ordenados del más
+    reciente al más antiguo' | translate}}. {{'Cada uno incluye su descripción,
+    tecnologías utilizadas y documentación en GitHub' | translate}}.
   </p>
   <p class="text-muted text-center">
-    {{'Click en ' |translate}} <a href="/portfolio">{{'Inicio'| translate }}</a> 
+    {{'Click en ' |translate}} <a href="/portfolio">{{'Inicio'| translate }}</a>
     {{'para volver a la página principal' | translate}}.
   </p>
   <hr class="divider w-25 mx-auto my-4" />
@@ -32,7 +33,10 @@
       >
     </div>
     <p>{{ project.description }}</p>
-    <div class="d-flex flex-row w-100 justify-content-start gap-3">
+    <div
+      class="d-grid w-100 justify-content-start gap-2"
+      style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))"
+    >
       @for (tag of project.tags; track $index) {
       <p class="badge badge-text-personality">{{tag}}</p>
       }

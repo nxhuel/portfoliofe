@@ -33,7 +33,7 @@
   </div>
 
   @for (project of filteredProjects; track $index) {
-  <div [attr.id]=project.id  class="card card-project mt-4">
+  <div [attr.id]="project.id" class="card card-project mt-4">
     <div
       class="card-header card-project-header pb-0 d-flex flex-row justify-content-between"
     >
@@ -55,7 +55,7 @@
           class="modal fade"
           [attr.id]="'videoModal' + $index"
           tabindex="-1"
-           [attr.aria-labelledby]="'videoModalLabel' + $index"
+          [attr.aria-labelledby]="'videoModalLabel' + $index"
           aria-hidden="true"
         >
           <div class="modal-dialog">
@@ -100,7 +100,10 @@
     <div class="card-body card-project-body text-start">
       <h5 class="card-title">{{project.title | translate}}</h5>
       <p class="card-text">{{project.description | translate}}</p>
-      <div class="tags ps-2 d-flex flex-row gap-2">
+      <div
+        class="tags ps-2 d-grid gap-2"
+        style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))"
+      >
         @for (tag of project.tags; track $index) {
         <p class="badge bg-secondary">{{tag}}</p>
         }
@@ -108,5 +111,4 @@
     </div>
   </div>
   }
-
 </section>
