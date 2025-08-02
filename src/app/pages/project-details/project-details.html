@@ -34,8 +34,9 @@
     </div>
     <p>{{ project.description }}</p>
     <div
-      class="d-grid w-100 justify-content-start gap-2"
-      style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))"
+      class="d-grid justify-content-start gap-2"
+            style="grid-template-columns: repeat(auto-fit, minmax(100px, auto))"
+
     >
       @for (tag of project.tags; track $index) {
       <p class="badge badge-text-personality">{{tag}}</p>
@@ -48,11 +49,14 @@
         Tu navegador no soporta el video.
       </video>
       } @else {
-      <img
-        [attr.src]="project.video"
-        [attr.alt]="project.title"
-        class="w-100 rounded"
-      />
+      <a [href]="project.video" target="_blank">
+        <img
+          [attr.src]="project.video"
+          [attr.alt]="project.title"
+          class="w-100 rounded"
+          style="cursor: zoom-in"
+        />
+      </a>
 
       }
     </div>

@@ -22,6 +22,24 @@ export class ProjectDetails {
 
   projects: Project[] = [
     {
+      id: 'libreria-virtual',
+      year: '2025',
+      github: 'https://github.com/nxhuel/libreriaVirtual',
+      video: '../../../../assets/images/libreriaDoc.png',
+      type: 'image/png',
+      title: 'Librería Virtual (En desarrollo)',
+      description:
+        'Aplicación web en desarrollo cuyo objetivo es ofrecer una experiencia completa de lectura y escritura Permite consultar libros provenientes de un sistema externo (tendencias, novedades, por categorías) o creados directamente por usuarios autenticados con rol de “escritor” Los usuarios pueden registrarse como “lectores” o “escritores”, compartir beneficios como la búsqueda avanzada de libros, participar en una comunidad interactiva mediante un foro, y dejar evaluaciones y reseñas. Los escritores con suscripción activa contarán con asistencia de IA integrada durante el proceso de redacción y publicación de libros',
+      tags: [
+        'Angular',
+        'Bootstrap',
+        'SCSS',
+        'ASP.NET Core',
+        'SQL Server',
+        'FullStack',
+      ],
+    },
+    {
       id: 'foro-hub',
       year: '2025',
       github: 'https://github.com/nxhuel/foro_hub',
