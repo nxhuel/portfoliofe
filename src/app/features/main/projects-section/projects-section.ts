@@ -38,7 +38,7 @@ export class ProjectsSection {
       github: 'https://github.com/nxhuel/toDoList',
       video: '../../../../assets/videos/toDoListDoc.webm',
       type: 'video/webm',
-      title: 'projects.Gestión de Tareas Diarias',
+      title: 'Gestión de Tareas Diarias',
       description:
         'projects.Software completo para la gestión de tareas personales, diseñada para ofrecer una experiencia ágil, organizada y moderna Permite crear, editar y eliminar tareas, con una interfaz clara y responsive Desarrollada con Angular, Bootstrap y SCSS en el frontend, y ASP NET Core con SQL Server en el backend Incluye pruebas con XUnit y documentación de API con Swagger',
       tags: [
@@ -59,10 +59,10 @@ export class ProjectsSection {
     {
       id: 'clon-aula-virtual',
       year: '2025',
-      github: 'url',
-      video: '../../../../assets/videos/aulaVirtualDoc.webm',
-      type: 'video/webm',
-      title: 'projects.Clon Aula Virtual - IFTS 21',
+      github: 'https://github.com/nxhuel/aula-virtual-backend',
+      video: '../../../../assets/videos/aulaVirtualDocV2.mp4',
+      type: 'video/mp4',
+      title: 'Clon Aula Virtual - IFTS 21',
       description:
         'projects.Plataforma integral para instituciones educativas que permite gestionar usuarios, materias e inscripciones de forma ágil y segura Desarrollada con Java (Spring Boot) y FrontEnd web rapida y facil de mantener, con arquitectura REST y enfoque escalable Actualmente el servidor se encuentra pausado por cuestiones económicas, pero puede activarse para su revisión bajo solicitud',
       tags: [
@@ -91,7 +91,7 @@ export class ProjectsSection {
         'Python',
         'Django',
         'Jinja2',
-        'SQLServer',
+        'SQL Server',
         'HTML5',
         'CSS3',
         'JavaScript',
